@@ -50,7 +50,7 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* Designing Left Sub-Section here */
@@ -96,6 +96,7 @@ body {
 
 .Right_main_section {
   /* height: 100vh; */
+  margin-right: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +108,7 @@ body {
 }
 
 .last_third_img img {
-  height: 25vh;
+  height: 27vh;
 }
 
 .mockup_img3:hover {
@@ -123,7 +124,11 @@ body {
   cursor: pointer;
 }
 
+.mockup_img2 {
+  margin: 0px 10px;
+}
 .mockup_img1 {
+  margin: 0px 10px;
   background-color: #d6d7d2;
   border-radius: 20px;
 }
@@ -141,7 +146,6 @@ body {
 
 @media (max-width: 600px) {
   .section {
-    
     height: auto;
     display: flex;
     align-items: center;
@@ -167,27 +171,22 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .nav_menu ul li {
     list-style: none;
-    
   }
   .nav_menu ul li a {
-    display:block;
+    display: block;
     text-align: center;
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: 4vw;
-  
-    border-radius: 5px;
-   
-  
 
+    border-radius: 5px;
   }
   .nav_menu ul li a:hover {
     color: green;
-   
   }
   .learnmorebtn {
     display: flex;
@@ -195,7 +194,7 @@ body {
     justify-content: center;
   }
 
-  .maintext{
+  .maintext {
     text-align: center;
   }
 
@@ -205,7 +204,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    margin-right: 0px;
     margin-bottom: 50px;
+  }
+
+  .mockup_img2 {
+    margin: 0;
+  }
+  .mockup_img1 {
+    margin: 0px 10px;
   }
 }
