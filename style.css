@@ -4,15 +4,17 @@
 }
 
 body {
+    
   display: flex;
+
   flex-direction: column;
+
   width: 90vw;
   height: 100vh;
   margin: auto;
   background-color: #d5f7db;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  /* border: 1px solid; */
 }
 
 /* Designing Navbar  */
@@ -47,10 +49,11 @@ body {
 /* Main Section Starts From Here  */
 
 .section {
+    width: 90vw;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Designing Left Sub-Section here */
@@ -67,7 +70,7 @@ body {
 }
 
 .maintext {
-  font-size: xx-large;
+  /* font-size: xx-large; */
   text-align: start;
 }
 
@@ -95,40 +98,34 @@ body {
 /* Designing right Sub-Section here */
 
 .Right_main_section {
-  /* height: 100vh; */
-  margin-right: 100px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.first_two_img img {
+.first_two_img img {   
   height: 30vh;
 }
 
 .last_third_img img {
-  height: 27vh;
+  height: 25vh;
 }
 
 .mockup_img3:hover {
   border-radius: 20px;
   box-shadow: 1px 1px 10px 1px #000000;
-
   cursor: pointer;
 }
 .mockup_img2:hover {
   border-radius: 20px;
   box-shadow: 1px 1px 10px 1px #000000;
-
   cursor: pointer;
 }
 
-.mockup_img2 {
-  margin: 0px 10px;
-}
+
 .mockup_img1 {
-  margin: 0px 10px;
   background-color: #d6d7d2;
   border-radius: 20px;
 }
@@ -144,7 +141,12 @@ body {
 
 /* first media Query for Mobile Phone */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
+    body{
+        width: 90vw;
+    
+    }
   .section {
     height: auto;
     display: flex;
@@ -199,11 +201,9 @@ body {
   }
 
   .Right_main_section {
-    /* height: 100vh; */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90vw;    
     margin-right: 0px;
     margin-bottom: 50px;
   }
@@ -212,6 +212,15 @@ body {
     margin: 0;
   }
   .mockup_img1 {
-    margin: 0px 10px;
+    margin: 0px;
   }
+
+  .first_two_img img {   
+    height: 24vh;
+  }
+  
+  .last_third_img img {
+    height: 20vh;
+  }
+  
 }
