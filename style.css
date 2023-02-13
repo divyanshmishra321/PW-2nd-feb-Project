@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+  background-color: #d5f7db;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+/* Designing Navbar  */
+
+.navbar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.nav_menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+}
+
+.nav_menu ul li {
+  list-style: none;
+}
+.nav_menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.nav_menu ul li a:hover {
+  color: green;
+}
+
+/* Main Section Starts From Here  */
+
+.section {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Designing Left Sub-Section here */
+
+.Left_main_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.Left_main_section div {
+  text-align: center;
+}
+
+.maintext {
+  font-size: xx-large;
+  text-align: start;
+}
+
+/* Learn More Button Designing  */
+.learnmorebtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.learnmorebtn button {
+  background-color: rgb(110, 189, 110);
+  color: #d5f7db;
+  padding: 4px;
+  margin: 20px 0px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.learnmorebtn button:hover {
+  color: rgb(110, 189, 110);
+  border: 1px solid rgb(110, 189, 110);
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Designing right Sub-Section here */
+
+.Right_main_section {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first_two_img img {
+  height: 30vh;
+}
+
+.last_third_img img {
+  height: 25vh;
+}
+
+.mockup_img3:hover {
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 1px #000000;
+
+  cursor: pointer;
+}
+.mockup_img2:hover {
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 1px #000000;
+
+  cursor: pointer;
+}
+
+.mockup_img1 {
+  background-color: #d6d7d2;
+  border-radius: 20px;
+}
+.mockup_img1:hover {
+  background-color: #d6d7d2;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 1px #000000;
+
+  cursor: pointer;
+}
+
+/* Media Queries For Responsiveness */
+
+/* first media Query for Mobile Phone */
+
+@media (max-width: 600px) {
+  .section {
+    
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .nav_menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav_menu ul li {
+    list-style: none;
+    
+  }
+  .nav_menu ul li a {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 4vw;
+  
+    border-radius: 5px;
+   
+  
+
+  }
+  .nav_menu ul li a:hover {
+    color: green;
+   
+  }
+  .learnmorebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .maintext{
+    text-align: center;
+  }
+
+  .Right_main_section {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+  }
+}
